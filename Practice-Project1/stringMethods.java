@@ -23,7 +23,41 @@ public class stringMethods {
 		String x="Welcome to Java";
 		String y="WeLcOmE tO JaVa";
 		System.out.println(x.equals(y));
-
+		//Buffer
+		System.out.println("");
+		System.out.println("StringBuffer");
+		StringBuffer sb =  new StringBuffer("hello");
+		System.out.println(sb);
+		sb.append(" Maria");
+		System.out.println(sb);
+		sb.replace(0,5,"Good Morning");
+		System.out.println(sb);
+		sb.delete(0, 5);
+		System.out.println(sb);
+		
+		//StringBuilder
+		StringBuilder sb1 = new StringBuilder("Welcome");
+		System.out.println(sb1);
+		sb1.append("John");
+		System.out.println(sb1);
+		sb1.delete(0, 2);
+		sb1.reverse();
+		System.out.println(sb1);
+		
+		
+		 //Conversion
+		String greeting ="Welcome";
+		StringBuffer sb11 = new StringBuffer(greeting);
+		sb11.append(" Home");
+		System.out.println("String to Buffer");
+		System.out.println(sb11);
+		
+		
+		StringBuilder sb21 = new StringBuilder(greeting);
+		sb21.reverse();
+		System.out.println("string to Builder");
+		System.out.println(sb21);
+		
 	}
 
 }
