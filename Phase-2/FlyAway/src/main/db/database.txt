@@ -1,0 +1,62 @@
+create table `places`(
+	`source` varchar(255) not null,
+    `destination` varchar(255) not null);
+    
+    
+    
+ create table `airlines`(
+ 	`id` bigint NOT NULL AUTO_INCREMENT,
+ 	`name` varchar(255) not null,
+ 	`country` varchar(255) not null,
+    PRIMARY KEY(`id`)
+    
+    );
+ 	
+
+ create table `user`(
+ 	`email` varchar(255) not null,
+ 	`password` varchar(255) not null);
+
+//flight
+create table `flight` (
+	
+	`source` varchar(255) not null,
+    `destination` varchar(255) not null,
+    `date` varchar(255) not null,
+    `name` varchar(255) not null,
+    `price` int(10));
+    
+//user
+
+insert into user values('abc@gmail.com','abc123');
+insert into user values('xyz@gmail.com','xyz123');
+//places    
+insert into places values('Chennai','Coimbatore');
+insert into places values('Delhi','Seoul');
+insert into places values('Dubai','Delhi');
+insert into places values('Madurai','Bangalore');
+insert into places values('Chennai','Pune');
+insert into places values('Pune','Delhi');
+insert into places values('London','Toronto');
+
+IndiGo.
+Air India.
+SpiceJet.
+Go First.
+AirAsia India.
+Vistara.
+Alliance Air.
+TruJet.
+//airlines
+insert into airlines values(1,'IndiGo');
+insert into airlines (name) values('SpiceJet');
+insert into airlines (name) values('Air India');
+insert into airlines (name) values('Go First');
+
+//flights
+insert into flight values('Pune','Delhi','2022-08-25','IndiGo',25000);
+insert into flight values('Chennai','Coimbatore','2022-08-15','SpiceJet',5000);
+
+insert into flight values('Dubai','Delhi','2022-09-05','IndiGo',125000);
+insert into flight values('Delhi','Seoul','2023-03-03','Air India',85000);
+
